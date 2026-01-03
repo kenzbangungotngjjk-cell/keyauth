@@ -6,8 +6,8 @@ async function initDatabase() {
 
     try {
         // Create default admin
-        const adminUsername = process.env.ADMIN_USERNAME || 'admin';
-        const adminPassword = process.env.ADMIN_PASSWORD || 'Admin@123456';
+        const adminUsername = process.env.ADMIN_USERNAME || 'Alvin';
+        const adminPassword = process.env.ADMIN_PASSWORD || 'yumieee123';
         const hashedPassword = await bcrypt.hash(adminPassword, 10);
 
         // Check if admin exists
