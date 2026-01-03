@@ -113,8 +113,8 @@ class Database {
     }
 
     async createDefaultAdmin() {
-        const username = process.env.ADMIN_USERNAME || 'admin';
-        const password = process.env.ADMIN_PASSWORD || 'Admin@123456';
+        const username = process.env.ADMIN_USERNAME || 'Alvjn';
+        const password = process.env.ADMIN_PASSWORD || 'yumieee123';
 
         this.db.get('SELECT * FROM admins WHERE username = ?', [username], async (err, row) => {
             if (!row) {
